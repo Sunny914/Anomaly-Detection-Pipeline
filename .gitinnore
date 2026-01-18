@@ -1,0 +1,40 @@
+############################
+# Archives / binaries
+############################
+*.tar.gz
+*.zip
+*.bin
+
+############################
+# Prometheus & Node Exporter
+############################
+infrastructure/prometheus/
+infrastructure/node_exporter/
+
+############################
+# Data / generated files
+############################
+data/
+data/**
+
+############################
+# Python cache
+############################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+############################
+# Virtual environments
+############################
+.venv/
+venv/
+env/
+
+############################
+# Logs / outputs
+############################
+*.log
+output_*.txt
+

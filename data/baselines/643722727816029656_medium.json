@@ -1,0 +1,13 @@
+{
+  "series": "('cpu_usage', (('cpu', '5'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'softirq')))",
+  "window": "medium",
+  "stats": {
+    "count": 1,
+    "mean": 0.0,
+    "median": 0.0,
+    "stdev": 0.0,
+    "min": 0.0,
+    "max": 0.0
+  },
+  "slope": 0.0
+}

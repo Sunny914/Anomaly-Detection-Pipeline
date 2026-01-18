@@ -1,0 +1,13 @@
+{
+  "series": "('cpu_usage', (('cpu', '6'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'idle')))",
+  "window": "medium",
+  "stats": {
+    "count": 1,
+    "mean": 0.9228683807026252,
+    "median": 0.9228683807026252,
+    "stdev": 0.0,
+    "min": 0.9228683807026252,
+    "max": 0.9228683807026252
+  },
+  "slope": 0.0
+}

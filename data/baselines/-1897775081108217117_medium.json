@@ -1,0 +1,13 @@
+{
+  "series": "('cpu_usage', (('cpu', '0'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'iowait')))",
+  "window": "medium",
+  "stats": {
+    "count": 1,
+    "mean": 0.0008888691362412401,
+    "median": 0.0008888691362412401,
+    "stdev": 0.0,
+    "min": 0.0008888691362412401,
+    "max": 0.0008888691362412401
+  },
+  "slope": 0.0
+}

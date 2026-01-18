@@ -1,0 +1,13 @@
+{
+  "series": "('memory_available', (('__name__', 'node_memory_MemAvailable_bytes'), ('instance', 'localhost:9100'), ('job', 'node_exporter')))",
+  "window": "long",
+  "stats": {
+    "count": 1,
+    "mean": 4723.828125,
+    "median": 4723.828125,
+    "stdev": 0.0,
+    "min": 4723.828125,
+    "max": 4723.828125
+  },
+  "slope": 0.0
+}

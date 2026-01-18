@@ -1,0 +1,455 @@
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7734773, 'value': 0.9277777777777778, 'labels': {'cpu': '0', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'idle'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7734962, 'value': 0.0002222222222223359, 'labels': {'cpu': '0', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'iowait'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735028, 'value': 0.0, 'labels': {'cpu': '0', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'irq'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735066, 'value': 0.0, 'labels': {'cpu': '0', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'nice'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.773509, 'value': 0.0015555555555554041, 'labels': {'cpu': '0', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'softirq'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.773513, 'value': 0.0, 'labels': {'cpu': '0', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'steal'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735152, 'value': 0.00977777777777899, 'labels': {'cpu': '0', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'system'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735183, 'value': 0.04555555555554949, 'labels': {'cpu': '0', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'user'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735214, 'value': 0.9262222222222287, 'labels': {'cpu': '1', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'idle'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735248, 'value': 0.0013333333333333838, 'labels': {'cpu': '1', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'iowait'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.773528, 'value': 0.0, 'labels': {'cpu': '1', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'irq'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735307, 'value': 0.0, 'labels': {'cpu': '1', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'nice'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735329, 'value': 0.0011111111111113637, 'labels': {'cpu': '1', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'softirq'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.773536, 'value': 0.0, 'labels': {'cpu': '1', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'steal'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735386, 'value': 0.012444444444445759, 'labels': {'cpu': '1', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'system'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735417, 'value': 0.03977777777777697, 'labels': {'cpu': '1', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'user'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735448, 'value': 0.9419999999999871, 'labels': {'cpu': '2', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'idle'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.773548, 'value': 0.0011111111111113637, 'labels': {'cpu': '2', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'iowait'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735505, 'value': 0.0, 'labels': {'cpu': '2', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'irq'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.773553, 'value': 0.0, 'labels': {'cpu': '2', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'nice'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735555, 'value': 0.00022222222222225698, 'labels': {'cpu': '2', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'softirq'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.773559, 'value': 0.0, 'labels': {'cpu': '2', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'steal'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735658, 'value': 0.011333333333333131, 'labels': {'cpu': '2', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'system'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735703, 'value': 0.030444444444452125, 'labels': {'cpu': '2', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'user'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735734, 'value': 0.9128888888889277, 'labels': {'cpu': '3', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'idle'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735763, 'value': 0.001111111111111048, 'labels': {'cpu': '3', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'iowait'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735791, 'value': 0.0, 'labels': {'cpu': '3', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'irq'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735817, 'value': 0.0, 'labels': {'cpu': '3', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'nice'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735841, 'value': 0.0, 'labels': {'cpu': '3', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'softirq'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735865, 'value': 0.0, 'labels': {'cpu': '3', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'steal'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735887, 'value': 0.011999999999999192, 'labels': {'cpu': '3', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'system'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735915, 'value': 0.03822222222222788, 'labels': {'cpu': '3', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'user'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735944, 'value': 0.9215555555555814, 'labels': {'cpu': '4', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'idle'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7735972, 'value': 0.0015555555555557198, 'labels': {'cpu': '4', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'iowait'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736003, 'value': 0.0, 'labels': {'cpu': '4', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'irq'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736025, 'value': 0.0, 'labels': {'cpu': '4', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'nice'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736049, 'value': 0.0002222222222222175, 'labels': {'cpu': '4', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'softirq'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736084, 'value': 0.0, 'labels': {'cpu': '4', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'steal'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736108, 'value': 0.013333333333331313, 'labels': {'cpu': '4', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'system'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736142, 'value': 0.04600000000000364, 'labels': {'cpu': '4', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'user'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736173, 'value': 0.9020000000000841, 'labels': {'cpu': '5', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'idle'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736216, 'value': 0.00177777777777774, 'labels': {'cpu': '5', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'iowait'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736244, 'value': 0.0, 'labels': {'cpu': '5', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'irq'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736268, 'value': 0.0, 'labels': {'cpu': '5', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'nice'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.773629, 'value': 0.0, 'labels': {'cpu': '5', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'softirq'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736313, 'value': 0.0, 'labels': {'cpu': '5', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'steal'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736335, 'value': 0.017777777777779294, 'labels': {'cpu': '5', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'system'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736473, 'value': 0.06222222222221616, 'labels': {'cpu': '5', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'user'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736506, 'value': 0.9024444444444574, 'labels': {'cpu': '6', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'idle'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736535, 'value': 0.00044444444444435605, 'labels': {'cpu': '6', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'iowait'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736568, 'value': 0.0, 'labels': {'cpu': '6', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'irq'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736592, 'value': 0.0, 'labels': {'cpu': '6', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'nice'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736614, 'value': 0.00022222222222217802, 'labels': {'cpu': '6', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'softirq'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736645, 'value': 0.0, 'labels': {'cpu': '6', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'steal'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736683, 'value': 0.010222222222220505, 'labels': {'cpu': '6', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'system'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.773672, 'value': 0.07133333333333415, 'labels': {'cpu': '6', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'user'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.773675, 'value': 0.9199999999998707, 'labels': {'cpu': '7', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'idle'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736778, 'value': 0.0006666666666666919, 'labels': {'cpu': '7', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'iowait'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.773681, 'value': 0.0, 'labels': {'cpu': '7', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'irq'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736833, 'value': 0.0, 'labels': {'cpu': '7', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'nice'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736855, 'value': 0.0, 'labels': {'cpu': '7', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'softirq'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.7736893, 'value': 0.0, 'labels': {'cpu': '7', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'steal'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.773692, 'value': 0.008666666666666364, 'labels': {'cpu': '7', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'system'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520591.773695, 'value': 0.0395555555555499, 'labels': {'cpu': '7', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'user'}}
+{'metric': 'memory_available', 'timestamp': 1768520591.7753549, 'value': 4828844032.0, 'labels': {'__name__': 'node_memory_MemAvailable_bytes', 'instance': 'localhost:9100', 'job': 'node_exporter'}}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.9277777777777778, 'labels': {'cpu': '0', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'idle'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0002222222222223359, 'labels': {'cpu': '0', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'iowait'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '0', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'irq'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '0', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'nice'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0015555555555554041, 'labels': {'cpu': '0', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'softirq'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '0', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'steal'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.00977777777777899, 'labels': {'cpu': '0', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'system'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.04555555555554949, 'labels': {'cpu': '0', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'user'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.9262222222222287, 'labels': {'cpu': '1', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'idle'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0013333333333333838, 'labels': {'cpu': '1', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'iowait'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '1', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'irq'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '1', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'nice'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0011111111111113637, 'labels': {'cpu': '1', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'softirq'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '1', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'steal'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.012444444444445759, 'labels': {'cpu': '1', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'system'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.03977777777777697, 'labels': {'cpu': '1', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'user'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.9419999999999871, 'labels': {'cpu': '2', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'idle'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0011111111111113637, 'labels': {'cpu': '2', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'iowait'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '2', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'irq'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '2', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'nice'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.00022222222222225698, 'labels': {'cpu': '2', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'softirq'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '2', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'steal'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.011333333333333131, 'labels': {'cpu': '2', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'system'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.030444444444452125, 'labels': {'cpu': '2', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'user'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.9128888888889277, 'labels': {'cpu': '3', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'idle'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.001111111111111048, 'labels': {'cpu': '3', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'iowait'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '3', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'irq'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '3', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'nice'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '3', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'softirq'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '3', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'steal'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.011999999999999192, 'labels': {'cpu': '3', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'system'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.03822222222222788, 'labels': {'cpu': '3', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'user'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.9215555555555814, 'labels': {'cpu': '4', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'idle'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0015555555555557198, 'labels': {'cpu': '4', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'iowait'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '4', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'irq'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '4', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'nice'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0002222222222222175, 'labels': {'cpu': '4', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'softirq'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '4', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'steal'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.013333333333331313, 'labels': {'cpu': '4', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'system'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.04600000000000364, 'labels': {'cpu': '4', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'user'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.9020000000000841, 'labels': {'cpu': '5', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'idle'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.00177777777777774, 'labels': {'cpu': '5', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'iowait'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '5', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'irq'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '5', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'nice'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '5', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'softirq'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '5', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'steal'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.017777777777779294, 'labels': {'cpu': '5', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'system'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.06222222222221616, 'labels': {'cpu': '5', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'user'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.9024444444444574, 'labels': {'cpu': '6', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'idle'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.00044444444444435605, 'labels': {'cpu': '6', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'iowait'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '6', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'irq'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '6', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'nice'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.00022222222222217802, 'labels': {'cpu': '6', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'softirq'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '6', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'steal'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.010222222222220505, 'labels': {'cpu': '6', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'system'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.07133333333333415, 'labels': {'cpu': '6', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'user'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.9199999999998707, 'labels': {'cpu': '7', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'idle'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0006666666666666919, 'labels': {'cpu': '7', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'iowait'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '7', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'irq'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '7', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'nice'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '7', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'softirq'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0, 'labels': {'cpu': '7', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'steal'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.008666666666666364, 'labels': {'cpu': '7', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'system'}, 'unit': 'seconds_per_second'}
+{'metric': 'cpu_usage', 'timestamp': 1768520580, 'value': 0.0395555555555499, 'labels': {'cpu': '7', 'instance': 'localhost:9100', 'job': 'node_exporter', 'mode': 'user'}, 'unit': 'seconds_per_second'}
+{'metric': 'memory_available', 'timestamp': 1768520580, 'value': 4605.14453125, 'labels': {'__name__': 'node_memory_MemAvailable_bytes', 'instance': 'localhost:9100', 'job': 'node_exporter'}, 'unit': 'MB'}
+
+Series: ('cpu_usage', (('cpu', '0'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'idle')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '0'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'iowait')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '0'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'irq')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '0'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'nice')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '0'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'softirq')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '0'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'steal')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '0'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'system')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '0'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'user')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '1'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'idle')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '1'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'iowait')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '1'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'irq')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '1'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'nice')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '1'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'softirq')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '1'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'steal')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '1'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'system')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '1'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'user')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '2'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'idle')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '2'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'iowait')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '2'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'irq')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '2'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'nice')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '2'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'softirq')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '2'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'steal')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '2'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'system')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '2'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'user')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '3'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'idle')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '3'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'iowait')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '3'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'irq')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '3'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'nice')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '3'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'softirq')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '3'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'steal')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '3'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'system')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '3'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'user')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '4'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'idle')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '4'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'iowait')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '4'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'irq')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '4'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'nice')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '4'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'softirq')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '4'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'steal')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '4'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'system')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '4'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'user')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '5'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'idle')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '5'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'iowait')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '5'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'irq')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '5'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'nice')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '5'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'softirq')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '5'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'steal')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '5'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'system')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '5'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'user')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '6'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'idle')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '6'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'iowait')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '6'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'irq')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '6'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'nice')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '6'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'softirq')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '6'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'steal')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '6'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'system')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '6'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'user')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '7'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'idle')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '7'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'iowait')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '7'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'irq')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '7'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'nice')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '7'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'softirq')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '7'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'steal')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '7'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'system')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('cpu_usage', (('cpu', '7'), ('instance', 'localhost:9100'), ('job', 'node_exporter'), ('mode', 'user')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1
+
+Series: ('memory_available', (('__name__', 'node_memory_MemAvailable_bytes'), ('instance', 'localhost:9100'), ('job', 'node_exporter')))
+  short windows: 1
+  medium windows: 1
+  long windows: 1

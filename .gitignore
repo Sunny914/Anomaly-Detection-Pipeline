@@ -1,0 +1,3 @@
+infrastructure/prometheus/*.tar.gz
+infrastructure/prometheus/prometheus-*/
+infrastructure/node_exporter/
