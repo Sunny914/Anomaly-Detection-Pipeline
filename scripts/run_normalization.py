@@ -1,5 +1,68 @@
 # scripts/run_normalization.py
 
+# scripts/run_normalization.py
+
+from ingestion.metric_registry import METRIC_REGISTRY
+from normalization.rate_conversion import normalize_rate
+from normalization.unit_normalization import normalize_units
+from normalization.resampler import resample_timestamp
+from scripts.run_ingestion import run_ingestion
+
+
+def run_normalization(debug=False):
+    """
+    Stage 2 — Normalization
+    - Converts raw samples into canonical form
+    - Preserves original timestamps
+    - Returns normalized samples for windowing
+    """
+
+    # Stage 1: Ingestion
+    raw_samples = run_ingestion()
+
+    normalized_samples = []
+
+    for raw in raw_samples:
+        metric_def = METRIC_REGISTRY[raw["metric"]]
+
+        # Work on a copy to avoid mutating raw samples
+        sample = dict(raw)
+
+        # Normalize rate (counters → rates if needed)
+        sample = normalize_rate(sample, metric_def)
+
+        # Normalize units (bytes → MB, cpu → percent, etc.)
+        sample = normalize_units(sample, metric_def)
+
+        # Preserve original timestamp
+        sample["original_timestamp"] = sample["timestamp"]
+
+        # Resample timestamp to fixed resolution
+        sample["timestamp"] = resample_timestamp(sample["timestamp"])
+
+        normalized_samples.append(sample)
+
+        if debug:
+            print(sample)
+
+    return normalized_samples
+
+
+if __name__ == "__main__":
+    run_normalization(debug=True)
+
+
+
+
+
+
+
+
+
+
+
+
+"""
 from ingestion.metric_registry import METRIC_REGISTRY
 from normalization.rate_conversion import normalize_rate
 from normalization.unit_normalization import normalize_units
@@ -30,7 +93,7 @@ def run_normalization():
 if __name__ == "__main__":
     run_normalization()
 
-
+"""
 
 
 

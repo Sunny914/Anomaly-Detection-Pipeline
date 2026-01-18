@@ -1,5 +1,38 @@
 # ingestion/promql_client.py
 
+# ingestion/promql_client.py
+
+import requests
+
+PROMETHEUS_URL = "http://localhost:9090"
+
+
+def query_prometheus_range(promql, start, end, step):
+    """
+    Executes a PromQL range query.
+    """
+
+    response = requests.get(
+        f"{PROMETHEUS_URL}/api/v1/query_range",
+        params={
+            "query": promql,
+            "start": start,
+            "end": end,
+            "step": step
+        },
+        timeout=10
+    )
+
+    response.raise_for_status()
+    data = response.json()
+
+    return data["data"]["result"]
+
+
+
+
+
+"""
 import requests
 import time
 
@@ -10,9 +43,9 @@ def query_prometheus_range(
     lookback_seconds: int = 300,
     step_seconds: int = 15
 ):
-    """
-    Executes a PromQL RANGE query and returns time-series samples.
-    """
+
+    # Executes a PromQL RANGE query and returns time-series samples.
+    
 
     end = int(time.time())
     start = end - lookback_seconds
@@ -30,6 +63,54 @@ def query_prometheus_range(
 
     response.raise_for_status()
     return response.json()["data"]["result"]
+"""
+
+
+
+
+
+
+
+
+"""
+import requests
+
+PROMETHEUS_URL = "http://localhost:9090"
+
+def query_prometheus(promql: str):
+    
+    # Instant query (single timestamp).
+    
+    response = requests.get(
+        f"{PROMETHEUS_URL}/api/v1/query",
+        params={"query": promql}
+    )
+    response.raise_for_status()
+    return response.json()["data"]["result"]
+
+
+def query_prometheus_range(promql: str, start, end, step="5s"):
+    
+    # Range query (time window).
+    
+    response = requests.get(
+        f"{PROMETHEUS_URL}/api/v1/query_range",
+        params={
+            "query": promql,
+            "start": start,
+            "end": end,
+            "step": step,
+        }
+    )
+    response.raise_for_status()
+    return response.json()["data"]["result"]
+
+"""
+
+
+
+
+
 
 
 

@@ -1,5 +1,68 @@
 # scripts/run_windowing.py
 
+# scripts/run_windowing.py
+
+from windows.window_config import WINDOW_DEFINITIONS
+from windows.window_builder import group_by_series, build_windows
+from scripts.run_normalization import run_normalization
+
+
+MIN_SAMPLES_PER_WINDOW = 2  # avoids meaningless windows
+
+
+def run_windowing(normalized_samples=None, debug=False):
+    """
+    Stage 3 — Windowing
+    - Groups normalized samples by series
+    - Builds sliding windows
+    - Filters weak windows
+    """
+
+    if normalized_samples is None:
+        normalized_samples = run_normalization()
+
+    series_map = group_by_series(normalized_samples)
+    windowed_series = {}
+
+    for series_key, samples in series_map.items():
+        windowed_series[series_key] = {}
+
+        if debug:
+            print("\nSeries:", series_key)
+
+        for window_name, cfg in WINDOW_DEFINITIONS.items():
+            windows = build_windows(
+                samples,
+                cfg["duration_sec"],
+                cfg["slide_sec"]
+            )
+
+            # Filter windows with too few samples
+            windows = [
+                w for w in windows
+                if len(w.values()) >= MIN_SAMPLES_PER_WINDOW
+            ]
+
+            windowed_series[series_key][window_name] = windows
+
+            if debug:
+                print(
+                    f"  {window_name} windows:",
+                    len(windows)
+                )
+
+    return windowed_series
+
+
+if __name__ == "__main__":
+    run_windowing(debug=True)
+
+
+
+
+
+
+"""
 from windows.window_config import WINDOW_DEFINITIONS
 from windows.window_builder import group_by_series, build_windows
 from scripts.run_normalization import run_normalization
@@ -33,7 +96,7 @@ def run_windowing():
 
 if __name__ == "__main__":
     run_windowing()
-
+"""
 
 
 

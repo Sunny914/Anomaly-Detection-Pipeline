@@ -11,6 +11,13 @@
 infrastructure/prometheus/
 infrastructure/node_exporter/
 
+# Prometheus binaries and archives
+infrastructure/prometheus/*.tar.gz
+infrastructure/prometheus/*.linux-amd64/
+infrastructure/prometheus/prometheus
+infrastructure/node_exporter/
+
+
 ############################
 # Data / generated files
 ############################
