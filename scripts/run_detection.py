@@ -1,7 +1,5 @@
 # scripts/run_detection.py
 
-# scripts/run_detection.py
-
 from scripts.run_windowing import run_windowing
 from baselines.rolling_stats import compute_rolling_stats
 from baselines.slope_models import compute_slope

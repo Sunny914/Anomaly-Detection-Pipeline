@@ -1,7 +1,5 @@
 # scripts/run_windowing.py
 
-# scripts/run_windowing.py
-
 from windows.window_config import WINDOW_DEFINITIONS
 from windows.window_builder import group_by_series, build_windows
 from scripts.run_normalization import run_normalization

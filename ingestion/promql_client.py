@@ -1,16 +1,14 @@
 # ingestion/promql_client.py
 
-# ingestion/promql_client.py
-
 import requests
 
 PROMETHEUS_URL = "http://localhost:9090"
 
 
 def query_prometheus_range(promql, start, end, step):
-    """
-    Executes a PromQL range query.
-    """
+
+    # Executes a PromQL range query.
+    
 
     response = requests.get(
         f"{PROMETHEUS_URL}/api/v1/query_range",
@@ -27,6 +25,28 @@ def query_prometheus_range(promql, start, end, step):
     data = response.json()
 
     return data["data"]["result"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
