@@ -1,14 +1,74 @@
 # baselines/slope_models.py
 
-# baselines/slope_models.py
+import statistics
 
+
+def _extract_time_series(windows):
+    timestamps = []
+    values = []
+
+    if isinstance(windows, list):
+        for w in windows:
+            for s in w.samples:
+                timestamps.append(s["timestamp"])
+                values.append(s["value"])
+    else:
+        for s in windows.samples:
+            timestamps.append(s["timestamp"])
+            values.append(s["value"])
+
+    return timestamps, values
+
+
+def compute_slope(windows):
+    timestamps, values = _extract_time_series(windows)
+
+    if len(values) < 2:
+        return 0.0
+
+    # Sort by time
+    combined = sorted(zip(timestamps, values))
+    times, values = zip(*combined)
+
+    t0 = times[0]
+    x = [t - t0 for t in times]
+    y = list(values)
+
+    x_mean = statistics.mean(x)
+    y_mean = statistics.mean(y)
+
+    numerator = sum((xi - x_mean) * (yi - y_mean) for xi, yi in zip(x, y))
+    denominator = sum((xi - x_mean) ** 2 for xi in x)
+
+    if denominator == 0:
+        return 0.0
+
+    slope = numerator / denominator  # value per second
+
+    # Safety clamp
+    if abs(slope) > 1e6:
+        return 0.0
+
+    return slope
+
+
+
+
+
+
+
+
+
+
+
+"""
 import statistics
 
 def compute_slope(window):
-    """
-    Computes time-normalized slope (trend) of values over time.
-    Slope unit: value change per second.
-    """
+    
+    # Computes time-normalized slope (trend) of values over time.
+    # Slope unit: value change per second.
+    
 
     samples = list(window.samples)
 
@@ -42,7 +102,7 @@ def compute_slope(window):
 
     return raw_slope
 
-
+"""
 
 
 
