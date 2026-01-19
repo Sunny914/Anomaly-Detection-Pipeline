@@ -1,3 +1,73 @@
+from typing import List, Dict
+
+# Max time gap (seconds) allowed between anomalies in the same incident
+GROUPING_GAP_SEC = 120  # 2 minutes
+
+
+def _get_anomaly_time(anomaly: Dict) -> float:
+    """
+    Returns a comparable time for anomaly grouping.
+    Uses start_time (range-based anomalies).
+    """
+    if "start_time" in anomaly:
+        return anomaly["start_time"]
+
+    raise ValueError(
+        f"Anomaly missing start_time. Keys={list(anomaly.keys())}"
+    )
+
+
+def group_anomalies(anomalies: List[Dict]) -> List[List[Dict]]:
+    """
+    Groups anomalies into clusters representing the same incident.
+
+    Rules:
+    - Same series
+    - Time gap between anomaly start_times <= GROUPING_GAP_SEC
+    """
+
+    if not anomalies:
+        return []
+
+    # Sort anomalies by start_time
+    anomalies = sorted(anomalies, key=_get_anomaly_time)
+
+    groups: List[List[Dict]] = []
+    current_group: List[Dict] = [anomalies[0]]
+
+    for anomaly in anomalies[1:]:
+        last = current_group[-1]
+
+        same_series = anomaly["series"] == last["series"]
+
+        time_gap = (
+            anomaly["start_time"]
+            - last["start_time"]
+        )
+
+        close_in_time = time_gap <= GROUPING_GAP_SEC
+
+        if same_series and close_in_time:
+            current_group.append(anomaly)
+        else:
+            groups.append(current_group)
+            current_group = [anomaly]
+
+    groups.append(current_group)
+    return groups
+
+
+
+
+
+
+
+
+
+
+
+
+"""
 # incidents/anomaly_grouper.py
 
 from typing import List, Dict
@@ -7,10 +77,10 @@ GROUPING_GAP_SEC = 120  # 2 minutes
 
 
 def _get_anomaly_time(anomaly: Dict) -> float:
-    """
-    Extract a comparable timestamp from an anomaly.
-    Every anomaly MUST have a canonical timestamp.
-    """
+    
+    #Extract a comparable timestamp from an anomaly.
+    #Every anomaly MUST have a canonical timestamp.
+    
     ts = anomaly.get("timestamp")
 
     if ts is None:
@@ -22,13 +92,13 @@ def _get_anomaly_time(anomaly: Dict) -> float:
 
 
 def group_anomalies(anomalies: List[Dict]) -> List[List[Dict]]:
-    """
-    Groups anomalies into clusters representing the same incident.
+    
+    #Groups anomalies into clusters representing the same incident.
 
-    Rules:
-    - Same series
-    - Time gap <= GROUPING_GAP_SEC
-    """
+    #Rules:
+    #- Same series
+    #- Time gap <= GROUPING_GAP_SEC
+    #
 
     if not anomalies:
         return []
@@ -62,7 +132,7 @@ def group_anomalies(anomalies: List[Dict]) -> List[List[Dict]]:
 
     return groups
 
-
+"""
 
 
 

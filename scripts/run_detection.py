@@ -96,8 +96,13 @@ def run_detection(debug=False):
                     "series": str(series_key),
                     "window_type": window_type,
 
+                    
+                    # ✅ TIME BOUNDARIES (CRITICAL)
+                    "start_time": current_window.start_ts,
+                    "end_time": current_window.end_ts,
+                    
                     # Canonical anomaly time (from window)
-                    "timestamp": current_window.center_ts,
+                    #"timestamp": current_window.center_ts,
 
                     "detectors_triggered": [s["detector"] for s in signals],
                     "severity": final_severity,

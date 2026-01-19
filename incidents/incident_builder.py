@@ -1,3 +1,77 @@
+from typing import List, Dict
+from collections import Counter
+
+
+def build_incident(anomalies: List[Dict]) -> Dict:
+    """
+    Builds a single incident from grouped anomalies.
+    """
+
+    if not anomalies:
+        return {}
+
+    # --- Time boundaries ---
+    start_time = min(a["start_time"] for a in anomalies)
+    end_time = max(a["end_time"] for a in anomalies)
+    duration_sec = max(0.0, end_time - start_time)
+
+    # --- Severity & confidence ---
+    severities = [a["severity"] for a in anomalies]
+    confidence = round(sum(a["confidence"] for a in anomalies) / len(anomalies), 2)
+
+    if "high" in severities:
+        severity = "high"
+    elif "medium" in severities:
+        severity = "medium"
+    else:
+        severity = "low"
+
+    # --- Metadata aggregation ---
+    window_types = sorted(set(a["window_type"] for a in anomalies))
+
+    detectors = []
+    directions = []
+
+    for a in anomalies:
+        for s in a["signals"]:
+            detectors.append(s["detector"])
+            if "direction" in s:
+                directions.append(s["direction"])
+
+    dominant_detector = Counter(detectors).most_common(1)[0][0]
+    trend_direction = Counter(directions).most_common(1)[0][0] if directions else "unknown"
+
+    return {
+        "series": anomalies[0]["series"],
+
+        # ✅ TIME
+        "start_time": start_time,
+        "end_time": end_time,
+        "duration_sec": duration_sec,
+
+        # SUMMARY
+        "severity": severity,
+        "confidence": confidence,
+        "anomaly_count": len(anomalies),
+        "window_types": window_types,
+        "dominant_detector": dominant_detector,
+        "trend_direction": trend_direction,
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
 # incidents/incident_builder.py
 
 import uuid
@@ -26,9 +100,9 @@ def _get_anomaly_time(anomaly: Dict) -> float:
 
 
 def build_incident(anomaly_group: List[Dict]) -> Dict:
-    """
-    Builds a single incident from a group of related anomalies.
-    """
+    
+    # Builds a single incident from a group of related anomalies.
+    
 
     if not anomaly_group:
         return None
@@ -123,3 +197,6 @@ def build_incident(anomaly_group: List[Dict]) -> Dict:
 
         "signals": signals,
     }
+
+
+"""
