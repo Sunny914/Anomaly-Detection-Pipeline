@@ -9,12 +9,16 @@ GROUPING_GAP_SEC = 120  # 2 minutes
 def _get_anomaly_time(anomaly: Dict) -> float:
     """
     Extract a comparable timestamp from an anomaly.
+    Every anomaly MUST have a canonical timestamp.
     """
-    return (
-        anomaly.get("start_time")
-        or anomaly.get("timestamp")
-        or anomaly.get("time")
-    )
+    ts = anomaly.get("timestamp")
+
+    if ts is None:
+        raise ValueError(
+            f"Anomaly missing timestamp. Keys={list(anomaly.keys())}"
+        )
+
+    return ts
 
 
 def group_anomalies(anomalies: List[Dict]) -> List[List[Dict]]:
@@ -29,7 +33,7 @@ def group_anomalies(anomalies: List[Dict]) -> List[List[Dict]]:
     if not anomalies:
         return []
 
-    # Sort anomalies by time
+    # Sort anomalies by time (safe: timestamp is guaranteed)
     anomalies = sorted(anomalies, key=_get_anomaly_time)
 
     groups: List[List[Dict]] = []
@@ -57,6 +61,7 @@ def group_anomalies(anomalies: List[Dict]) -> List[List[Dict]]:
     groups.append(current_group)
 
     return groups
+
 
 
 

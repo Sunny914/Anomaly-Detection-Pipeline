@@ -1,7 +1,5 @@
 # detectors/slope_deviation.py
 
-# detectors/slope_deviation.py
-
 from baselines.slope_models import compute_slope
 
 
@@ -54,6 +52,7 @@ def detect_slope_deviation(
     return {
         "series": str(series_key),
         "window_type": window_type,
+        "timestamp": window.center_ts,   # ✅ ADD THIS
         "detector": "slope_deviation",
 
         # Slopes
@@ -66,6 +65,7 @@ def detect_slope_deviation(
         "severity": severity,
         "confidence": round(confidence, 2)
     }
+
 
 
 

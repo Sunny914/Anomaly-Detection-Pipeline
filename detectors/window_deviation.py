@@ -1,8 +1,6 @@
 # detectors/window_deviation.py
 
 
-# detectors/window_deviation.py
-
 from detectors.detector_utils import relative_deviation
 
 
@@ -39,27 +37,22 @@ def detect_window_deviation(
 ):
     """
     Detects anomaly based on window deviation from baseline.
-    Uses robust statistics and returns severity + confidence.
     """
 
-    values = list(window.values())
+    values = window.get_values()
     if not values:
         return None
 
-    # Current behavior
     current_mean = sum(values) / len(values)
     current_median = sorted(values)[len(values) // 2]
 
-    # Baseline behavior
     baseline_mean = baseline_stats["mean"]
     baseline_median = baseline_stats["median"]
     mad = baseline_stats.get("mad")
 
-    # Deviations
     relative_dev = relative_deviation(current_mean, baseline_mean)
     absolute_dev = current_mean - baseline_mean
 
-    # Detection condition
     if (
         abs(relative_dev) < relative_threshold
         and abs(absolute_dev) < absolute_threshold
@@ -73,21 +66,22 @@ def detect_window_deviation(
         "series": str(series_key),
         "window_type": window_type,
         "detector": "window_mean_deviation",
+        "timestamp": window.center_ts,
 
-        # Values
         "current_mean": current_mean,
         "baseline_mean": baseline_mean,
         "current_median": current_median,
         "baseline_median": baseline_median,
 
-        # Deviations
         "relative_deviation": relative_dev,
         "absolute_deviation": absolute_dev,
 
-        # Scoring
         "severity": severity,
         "confidence": round(confidence, 2)
     }
+
+
+    
 
 
 
